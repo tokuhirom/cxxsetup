@@ -23,7 +23,7 @@ my $build = Module::Build->new(
 
     script_files => ['cxxsetup'],
 
-    test_files => (-d '.git' || $ENV{RELEASE_TESTING}) ? 't/ xt/' : 't/',
+    test_files => (-d '.git' || $ENV{RELEASE_TESTING}) ? 't/' : 't/',
     recursive_test_files => 1,
    
     create_readme  => 1,
